@@ -6,11 +6,11 @@ weight: 10
 
 ## Installation
 
-Vale works on Windows, macOS and Linux. Installation is simple and there are a few options to choose from, as discussed below.
+Vale works on Windows, macOS, and Linux. Installation is simple and there are a few options to choose from, as discussed below.
 
 **Windows Installer**
 
-The easiest way to install on Windows is to use the Windows Installer package, `vale.msi` (which you'll find on the [releases page](https://github.com/ValeLint/vale/releases)). 
+The easiest way to install on Windows is to use the Windows Installer package, `vale.msi` (which you'll find on the [releases page](https://github.com/ValeLint/vale/releases)).
 
 You may be warned about the package coming from an "unidentified developer." If you're not comfortable with this, you can install manually (see below).
 
@@ -25,7 +25,7 @@ $ brew install vale
 
 **Manually (Windows, macOS & Linux)**
 
-Download a binary from the [releases page](https://github.com/ValeLint/vale/releases) for your OS. 
+Download a binary from the [releases page](https://github.com/ValeLint/vale/releases) for your OS.
 
 You can put it anywhere you want. If you're not sure how to get started, check out one of our guides below.
 
