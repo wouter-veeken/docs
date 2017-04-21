@@ -23,7 +23,7 @@ metadataformat = "yaml"
 
 	# Custom assets
     # <table id="example" class="display"></table>
-	custom_css = [] # ["/css/application.css"]
+	custom_css = ["/css/application.css"]
 	custom_js  = [] # ["vendor/jquery-3.2.1.min.js", "/vendor/DataTables/jquery.dataTables.min.js", "/js/styles.js"]
 
 	# Syntax highlighting theme
