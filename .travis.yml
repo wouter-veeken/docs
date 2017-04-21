@@ -2,21 +2,19 @@ dist: trusty
 sudo: required
 language: go
 install:
-  - go get -v github.com/spf13/hugo
-  - go get github.com/ValeLint/vale
-  - rm -rf public || exit 0
+- go get github.com/ValeLint/vale
+- rm -rf public || exit 0
 script:
-  - vale content
+- vale content
+- bin/hugo
 after_success:
-  - cp .travis.yml public
-  - bash scripts/deploy.sh
+- bash deploy.sh
 env:
   global:
-    - secure: "uH6mNaoJm4VzrmLN2Ce8656msiXsNmE0xJUtpLs4pOJMTqfHB/rkFpChwqwTM1K6lclvhRvOMCRJRRBqMKp88vP86bHg97/KJB5AMbyif0/vFHm7EjY6Rf9QbPB/8xpFbnfeT0QepH3giHByo0q5MtH3LTbogGuSxFoMB3/xVvLXvSPsIY7AhbgTTXb5dRO20bFCapHXEHLOvhKVgzIwMBfxqQuk4iUVMKYxegZqeqM4jQS/hvIhyngIQGLUFrqUjY3XWZyH/hwjIVbv9Ra4Zs2m33laaivaCW/Wj5/5N0NUoInTjLvIa4BFSnUJd1n3uXOJzMmdFDJsX/WI35np9CBqG01j+Y6mQ9x7G85/9L4BDSuHtUfLaJ60mJKz0lBy2m4JYM9K9vYEkA2PvyBn6K5jlt9pCJ7mojVyJlUhavcdsM5KirDXAIckfFX6QXcdalrmJuOM8hKkIgt3StOHI5CO4L7rlMwxBgdMVCdnX8NqNliHAwtEoRmIPtefN7MfIp5MSlYXg3BgeKYyBwpPU0vBd7kTiUQGOXHPJVLkBjwt3aCQCAXP5O3Mwm19q/edWoBjydVsoq1M7hMPFU1sz1f7mWdGguc1QbuRh5zC4HOB/fGQOnD2FF9PJrkSkQ2AmdiiMXS4qwWlEd1MEAOxl1amDxuWtSJGLsRXHyHCXPQ="
-    - GIT_DEPLOY_DIR=public
-    - GIT_DEPLOY_BRANCH=gh-pages
-    - GIT_DEPLOY_USERNAME="Travis CI"
-    - GIT_DEPLOY_EMAIL=joseph@jdkato.io
-branches:
+  - GIT_DEPLOY_DIR=public
+  - GIT_DEPLOY_BRANCH=gh-pages
+  - GIT_DEPLOY_USERNAME="Travis CI"
+  - GIT_DEPLOY_EMAIL=joseph@jdkato.io
+  - secure: DJru+SEhMXtPDPdhULMGy6ysTMglLy4YA+ApBPb6ywVwpX7lfOKs0tvbpsxWoy4vywkz8yVUIHNXQ22n0X8bYB2eD68mP17BblWCFowW2PivnSIeqdZyiOg1IDLJuDuNzww+RXXwqvtQf0hYf8xjTLhbE9HLgAjAAI2/ZFj/jvetrBOpDspfVIAYzvfL+cy1sIhC2BEg+QBP8FhCnBBmDxsktSVlT1KcQHuzgmFO93CM8ifnzl9wAeH33u6pEsLXi6WiQ43isR9UKsUZ8Pe2tpBav4sqvpKaANR1R6z1OrSj6Xrg36JONlYOjFXfLKnVp3AGsmY19f9BeBGkSYFoyYS2VupEVGYHP5QKN0eoY/QdjP8YS+Tx1qTAOs4dpj4lKl1NKqIeIuimDkgQW3/Zq6vSDiP5bDm6DKA+XSryBitca5zoC0lksSeRaOoWiwaSaz6qTC5lI7zd7MDJVHedv7s5UC2IVeVclA6nFtT7KhzF0qLt3cVIw3qXGbuHVI6UsMJEFiXqwdZHmdTZboDeXsWcL7l+op83mRC/jvDOdZe5aMLrRWR4ubXlZOpsmSBdPrPlUe7t6cX1O5Hxg/rdSy6zFG6HkopOdt/x8DPb43ffwbsp4c+Ubb56DUBeIeXBii696IxEt2/RNPx2pOG4XLHblTRnCeGbFHQl6C/95cE=
   only:
-    - master
+  - master
