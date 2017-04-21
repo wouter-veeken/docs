@@ -1,0 +1,85 @@
+baseurl = "https://valelint.github.io/"
+languageCode = "en-us"
+title = "Vale"
+theme = "hugo-material-docs"
+metadataformat = "yaml"
+
+[params]
+	# General information
+	author = "Joseph Kato"
+	description = "A customizable, syntax-aware linter for prose."
+	copyright = "Released under the MIT license"
+
+	# Repository
+	provider = "GitHub"
+	repo_url = "https://github.com/ValeLint/vale"
+
+	version = "0.3.4"
+	logo = "img/vale.png"
+    alt_logo = "img/vale-alt.png"
+	favicon = ""
+
+	permalink = "#"
+
+	# Custom assets
+    # <table id="example" class="display"></table>
+	custom_css = [] # ["/css/application.css"]
+	custom_js  = [] # ["vendor/jquery-3.2.1.min.js", "/vendor/DataTables/jquery.dataTables.min.js", "/js/styles.js"]
+
+	# Syntax highlighting theme
+	highlight_css  = "/css/github-gist.css"
+
+	[params.palette]
+    	primary = "red"
+    	accent  = "teal"
+
+    [params.font]
+    	text = "Ubuntu"
+    	code = "Ubuntu Mono"
+
+
+[social]
+	github  = "jdkato"
+	email   = "joesph@jdkato.io"
+
+[[menu.main]]
+    name   = "Home"
+    url    = "/"
+    weight = 1
+
+[[menu.main]]
+	name   = "Getting started"
+	url    = "getting-started/"
+	weight = 10
+
+[[menu.main]]
+	name   = "Usage"
+	url    = "usage/"
+	weight = 20
+
+[[menu.main]]
+	name   = "Configuration"
+	url    = "config/"
+	weight = 30
+
+[[menu.main]]
+	name   = "Styles"
+	url    = "styles/"
+	weight = 40
+
+[[menu.main]]
+    name   = "Formats"
+    url    = "formats/"
+    weight = 50
+
+[[menu.main]]
+    name   = "Examples"
+    url    = "examples/"
+    weight = 60
+
+
+[blackfriday]
+	smartypants	= true
+	fractions = true
+	smartDashes = true
+	plainIDAnchors = true
