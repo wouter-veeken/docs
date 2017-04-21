@@ -1,0 +1,22 @@
+dist: trusty
+sudo: required
+language: go
+install:
+  - go get -v github.com/spf13/hugo
+  - go get github.com/ValeLint/vale
+  - rm -rf public || exit 0
+script:
+  - vale content
+after_success:
+  - cp .travis.yml public
+  - bash scripts/deploy.sh
+env:
+  global:
+    - secure: "uH6mNaoJm4VzrmLN2Ce8656msiXsNmE0xJUtpLs4pOJMTqfHB/rkFpChwqwTM1K6lclvhRvOMCRJRRBqMKp88vP86bHg97/KJB5AMbyif0/vFHm7EjY6Rf9QbPB/8xpFbnfeT0QepH3giHByo0q5MtH3LTbogGuSxFoMB3/xVvLXvSPsIY7AhbgTTXb5dRO20bFCapHXEHLOvhKVgzIwMBfxqQuk4iUVMKYxegZqeqM4jQS/hvIhyngIQGLUFrqUjY3XWZyH/hwjIVbv9Ra4Zs2m33laaivaCW/Wj5/5N0NUoInTjLvIa4BFSnUJd1n3uXOJzMmdFDJsX/WI35np9CBqG01j+Y6mQ9x7G85/9L4BDSuHtUfLaJ60mJKz0lBy2m4JYM9K9vYEkA2PvyBn6K5jlt9pCJ7mojVyJlUhavcdsM5KirDXAIckfFX6QXcdalrmJuOM8hKkIgt3StOHI5CO4L7rlMwxBgdMVCdnX8NqNliHAwtEoRmIPtefN7MfIp5MSlYXg3BgeKYyBwpPU0vBd7kTiUQGOXHPJVLkBjwt3aCQCAXP5O3Mwm19q/edWoBjydVsoq1M7hMPFU1sz1f7mWdGguc1QbuRh5zC4HOB/fGQOnD2FF9PJrkSkQ2AmdiiMXS4qwWlEd1MEAOxl1amDxuWtSJGLsRXHyHCXPQ="
+    - GIT_DEPLOY_DIR=public
+    - GIT_DEPLOY_BRANCH=gh-pages
+    - GIT_DEPLOY_USERNAME="Travis CI"
+    - GIT_DEPLOY_EMAIL=joseph@jdkato.io
+branches:
+  only:
+    - master
