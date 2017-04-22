@@ -68,8 +68,12 @@ But Vale's true strength lies in its ability to support *your* style. See [Style
 
 ## Editor Integration
 
+<!-- vale docs.Branding = NO -->
+
 - Atom: [TimKam/atomic-vale](https://github.com/TimKam/atomic-vale)
 - Sublime Text: [ValeLint/SubVale](https://github.com/ValeLint/SubVale)
+
+<!-- vale docs.Branding = YES -->
 
 [Editorializing]: https://en.wikipedia.org/wiki/Wikipedia:Manual_of_Style/Words_to_watch#Editorializing
 [ComplexWords]: http://www.plainlanguage.gov/howto/wordsuggestions/complexabstract.cfm

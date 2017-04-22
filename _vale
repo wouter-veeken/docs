@@ -1,4 +1,4 @@
 StylesPath = style-guide
 
 [*.{md}]
-BasedOnStyles = vale, vale-docs
+BasedOnStyles = vale, docs
