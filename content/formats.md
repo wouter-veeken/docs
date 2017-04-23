@@ -1,12 +1,6 @@
----
-date: 2016-03-09T20:08:11+01:00
-title: Formats
-weight: 50
----
-
 ## Overview
 
-Vale strives to be "syntax aware," which means that it's capable of both applying rules to and ignoring certain sections of text. The difficulty with this, of course, is supporting the many different writing formats: Markdown, AsciiDoc, reStructuredText, etc. 
+Vale strives to be "syntax aware," which means that it's capable of both applying rules to and ignoring certain sections of text. The difficulty with this, of course, is supporting the many different writing formats: Markdown, AsciiDoc, reStructuredText, etc.
 
 Fortunately, they all have something in common: they're designed, to varying degrees, to be converted to HTML. Vale uses this commonality to avoid having to do any parsing itself and to allow for relatively easy integration of new formats. The strategy is simple:
 

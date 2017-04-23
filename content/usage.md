@@ -1,9 +1,3 @@
----
-date: 2016-03-09T19:56:50+01:00
-title: Usage
-weight: 20
----
-
 ## Using the CLI
 
 `vale` is a command-line tool for linting prose against style guidelines. Its general usage information is below:

@@ -1,9 +1,3 @@
----
-date: 2016-03-09T20:08:11+01:00
-title: Styles
-weight: 40
----
-
 ## Introduction
 
 Vale is built around the notion of "styles," which are directories containing individual "rule" definitions&mdash;for example, you might have a structure like

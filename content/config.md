@@ -1,9 +1,3 @@
----
-date: 2016-03-09T20:08:11+01:00
-title: Configuration
-weight: 30
----
-
 ## Basics
 
 Vale looks for its configuration in a file named `.vale` or `_vale`. This file may be located in the current working directory, a parent directory or `$HOME`. If multiple config files are present, the closest one takes precedence.
