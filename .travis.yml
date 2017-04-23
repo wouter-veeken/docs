@@ -10,9 +10,9 @@ script:
 after_success:
   - mkdocs build --verbose --clean --strict
 deploy:
- provider: pages
- skip_cleanup: true
- github_token: $GITHUB_TOKEN
- local_dir: site
- on:
-   branch: master
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  local_dir: site
+  on:
+    branch: master
