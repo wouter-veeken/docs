@@ -2,9 +2,8 @@ dist: trusty
 sudo: required
 language: python
 install:
- - pip install -r requirements.txt
- - eval "$(gimme 1.8)"
- - go get github.com/ValeLint/vale
+  - pip install -r requirements.txt
+  - go get github.com/ValeLint/vale
 script:
   - vale content
 after_success:
