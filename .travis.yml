@@ -1,17 +1,14 @@
 dist: trusty
 sudo: required
 language: python
-before_install:
-  - export GOPATH=$HOME/golang
-  - export PATH=$PATH:$GOPATH/bin
 install:
  - pip install -r requirements.txt
- - eval "$(gimme 1.7)"
+ - eval "$(gimme 1.8)"
  - go get github.com/ValeLint/vale
 script:
-- vale content
+  - vale content
 after_success:
-- mkdocs build --verbose --clean --strict
+  - mkdocs build --verbose --clean --strict
 deploy:
  provider: pages
  skip_cleanup: true
