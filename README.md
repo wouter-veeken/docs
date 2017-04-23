@@ -1,15 +1,16 @@
 # Vale Docs [![Build Status](https://travis-ci.org/ValeLint/docs.svg?branch=master)](https://travis-ci.org/ValeLint/docs)
 
-This repository houses the documentation and website source for [Vale](https://github.com/ValeLint/vale). Our documentation is written in [Markdown](http://commonmark.org/) and we use [Hugo](https://gohugo.io/) to build the site. See [Installing Hugo](https://gohugo.io/overview/installing/) for more information.
+This repository houses the documentation and website source for [Vale](https://github.com/ValeLint/vale). Our documentation is written in [Markdown](http://commonmark.org/) and we use [MkDocs](http://www.mkdocs.org/) to build the site.
 
 ### Running Locally
 
-Once you have Hugo installed, all you need to do is:
+You'll need Python 2.7+ installed:
 
 ```bash
 $ git clone https://github.com/ValeLint/docs.git
-$ cd docs && hugo server
-# ^ will be served at http://localhost:1313/
+$ cd docs
+$ pip install -r requirements.txt
+$ mkdocs serve
 ```
 
 ### Adding a Style
