@@ -1,0 +1,49 @@
+site_name: 'Vale: Your Style, Our Editor'
+site_description: A customizable, syntax-aware linter for prose.
+site_author: Joseph Kato
+site_url: https://valelint.github.io/docs/
+
+# Repository
+repo_name: ValeLint/vale
+repo_url: https://github.com/ValeLint/vale
+docs_dir: content
+
+# Copyright
+copyright: 'Copyright &copy; 2017 Joseph Kato'
+
+pages:
+- Getting Started: index.md
+- Usage: usage.md
+- Configuration: config.md
+- Custom Styles: styles.md
+- File Formats: formats.md
+- In the Wild: examples.md
+
+theme: material
+extra:
+  logo: 'img/vale-alt.png'
+  palette:
+    primary: 'red'
+    accent: 'light blue'
+
+# Extensions
+markdown_extensions:
+  - markdown.extensions.admonition
+  - markdown.extensions.codehilite(guess_lang=false)
+  - markdown.extensions.def_list
+  - markdown.extensions.footnotes
+  - markdown.extensions.meta
+  - markdown.extensions.toc(permalink=true)
+  - pymdownx.arithmatex
+  - pymdownx.betterem(smart_enable=all)
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist(custom_checkbox=true)
+  - pymdownx.tilde
