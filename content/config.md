@@ -31,6 +31,10 @@ vale.Editorializing = YES
 
 ## In-Text Configuration
 
+!!! tip "NOTE"
+
+    reStructuredText uses `.. vale off` style comments.
+
 Vale also supports context-specific configuration in Markdown, HTML, and reStructuredText documents:
 
 ```html
@@ -44,8 +48,6 @@ more text here...
 This is some text
 <!-- vale Style.Rule = YES -->
 ```
-
-NOTE:
 
 ## Examples
 
