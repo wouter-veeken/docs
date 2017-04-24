@@ -10,11 +10,11 @@ Fortunately, they all have something in common: they're designed, to varying deg
 
 While this may sound like a roundabout approach, Vale is still able to maintain a reasonable level of performance. Using Vale's built-in rules, here are a few benchmarks:
 
-| Project                | Files | Lines | Command                     | macOS  | Windows |
-|:----------------------:|:-----:|:-----:|:---------------------------:|:------:|:-------:|
-| [You-Dont-Know-JS][p1] |  68   | 21464 |  `time vale --glob='*.md'`  |  9.81s |  6.6s   |
-| [NLTK Book][p2]        |  45   | 36125 |  `time vale --glob='*.rst'` |  20.7s |  15.5s  |
-| [Django][p3]           |  2390 | 55101 |  `time vale --glob='*.py'`  |  14.6s |  8.1s   |
+| Project                | Files | Lines | Command                       | macOS  | Windows |
+|:----------------------:|:-----:|:-----:|:-----------------------------:|:------:|:-------:|
+| [You-Dont-Know-JS][p1] |  68   | 21464 |  `time vale --glob='*.md' .`  |  6.9s  |  6.6s   |
+| [NLTK Book][p2]        |  45   | 36125 |  `time vale --glob='*.rst' .` |  18.2s |  15.5s  |
+| [Django][p3]           |  2390 | 55101 |  `time vale --glob='*.py' .`  |  12.2s |  8.1s   |
 
 The testing environments were:
 
