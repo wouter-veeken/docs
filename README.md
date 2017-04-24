@@ -13,7 +13,7 @@ $ pip install -r requirements.txt
 $ mkdocs serve
 ```
 
-### Prose Style
+### Linting
 
 We follow 18F's [content guidelines](https://pages.18f.gov/content-guide/) with the following additions:
 
@@ -22,4 +22,6 @@ We follow 18F's [content guidelines](https://pages.18f.gov/content-guide/) with 
 - Use standard American English spelling (e.g., "color" instead of "colour").
 - Capitalize "Vale" unless specifically referring to the binary (in which case it should be in a code span&mdash;i.e., `vale`).
 - Use correct tech terminology: JavaScript, HTML, etc.
+
+We also use [`awesome_bot`](https://github.com/dkhamsing/awesome_bot) to check that all our links are working.
 
