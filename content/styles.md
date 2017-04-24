@@ -26,9 +26,9 @@ where *base*, *blog*, and *docs* are your styles. The [YAML](http://yaml.org/) f
 
 ## Creating a style
 
-`checks` provide a high-level way to extend Vale. They perform operations such as checking for consistency, counting occurrences and suggesting changes.
+`checks` offer a high-level way to extend Vale. They perform operations such as checking for consistency, counting occurrences and suggesting changes.
 
-[Vale](https://github.com/ValeLint/vale/tree/master/rule) and its [reference styles](https://github.com/ValeLint/vale/tree/master/styles) provide examples of how you can write your own rules.
+[Vale](https://github.com/ValeLint/vale/tree/master/rule) and its [reference styles](https://github.com/ValeLint/vale/tree/master/styles) are examples of how you can write your own rules.
 
 ### existence
 
@@ -86,7 +86,7 @@ swap:
   abundance: plenty
 ```
 
-The keys  may be regular expressions, but they cannot include nested capture groups:
+The keys  may be regular expressions, but they can't include nested capture groups:
 
 ```yaml
 swap:
@@ -131,7 +131,7 @@ tokens:
   - '\b(\w+)\b'
 ```
 
-A `repetition`  check  looks for repeated occurrences of its tokens. If `ignorecase` is set to `true`, it will convert all tokens to lower case for comparison purposes.
+A `repetition`  check  looks for repeated occurrences of its tokens. If `ignorecase` is set to `true`, it'll convert all tokens to lower case for comparison purposes.
 
 ### consistency
 
@@ -163,7 +163,11 @@ exceptions:
 
 A `conditional` check ensures that the existence of `first` implies the existence of `second`. For example, consider the following text:
 
+<!-- vale off -->
+
 > According to Wikipedia, the World Health Organization (WHO) is a specialized agency of the United Nations that is concerned with international public health. We can now use WHO because it has been defined, but we can't use DAFB because people may not know what it represents. We can use `DAFB` when it's presented as code, though.
+
+<!-- vale on -->
 
 Running `vale` on the above text with our example rule yields the following:
 
@@ -171,7 +175,7 @@ Running `vale` on the above text with our example rule yields the following:
 test.md:1:224:vale.UnexpandedAcronyms:'DAFB' has no definition
 ```
 
-A `conditional` check also takes an optional `exceptions` list. Any token listed as an exception will not be flagged.
+A `conditional` check also takes an optional `exceptions` list. Any token listed as an exception won't be flagged.
 
 ### spelling
 

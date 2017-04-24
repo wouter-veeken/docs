@@ -1,4 +1,8 @@
 StylesPath = style-guide
+MinAlertLevel = suggestion
 
 [*.{md}]
-BasedOnStyles = vale, docs
+BasedOnStyles = vale, docs, 18F
+
+vale.Annotations = NO
+18F.Spelling = NO

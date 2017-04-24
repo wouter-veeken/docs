@@ -1,6 +1,6 @@
 # Vale Docs [![Build Status](https://travis-ci.org/ValeLint/docs.svg?branch=master)](https://travis-ci.org/ValeLint/docs)
 
-This repository houses the documentation and website source for [Vale](https://github.com/ValeLint/vale). Our documentation is written in [Markdown](http://commonmark.org/) and we use [MkDocs](http://www.mkdocs.org/) to build the site.
+This repository houses the documentation and website source for [Vale](https://github.com/ValeLint/vale). We write our documentation in [Markdown](http://commonmark.org/) and use [MkDocs](http://www.mkdocs.org/) to build it.
 
 ### Running Locally
 

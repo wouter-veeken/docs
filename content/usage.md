@@ -2,7 +2,7 @@
 
 `vale` is a command-line tool for linting prose against style guidelines. Its general usage information is below:
 
-```none
+```text
 $ vale --help
 NAME:
    vale - A command-line linter for prose.
@@ -28,7 +28,7 @@ GLOBAL OPTIONS:
    --help, -h       show help
    --version, -v    print the version
 ```
-It can be run on single files or entire directories. You can also lint only files matching a particular glob:
+You can run Vale on single files or entire directories. You can also lint only files matching a particular glob:
 
 ```bash
 $ vale --glob='*.{md,rst}' some-directory
@@ -41,7 +41,7 @@ Or exclude files matching a particular glob:
 $ vale --glob='!*.min.js' some-directory
 ```
 
-By default, the following rules are enforced:
+Vale ships with the following rules:
 
 <!-- vale off -->
 

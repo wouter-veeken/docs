@@ -6,10 +6,9 @@ Vale is an open source linter for prose—no matter if it's plain text, markup o
 
 ## Installation
 
-Vale works on Windows, macOS, and Linux. Installation is simple and there are a few options to choose from, as discussed below.
+Vale works on Windows, macOS, and Linux. Installation is straightforward and there are a few options to choose from, as discussed below.
 
 **Windows Installer**
-
 
 !!! warning "NOTE"
 
