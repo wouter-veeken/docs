@@ -7,7 +7,7 @@ install:
   - go get github.com/ValeLint/vale
 script:
   - vale content
-  - awesome_bot content/*.md
+  - awesome_bot --allow-dupe content/*.md
 after_success:
   - mkdocs build --verbose --clean --strict
 deploy:

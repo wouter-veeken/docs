@@ -21,14 +21,14 @@ where *base*, *blog*, and *docs* are your styles. The [YAML](http://yaml.org/) f
 - The `type` of check you're extending;
 - a `message` to be displayed to the user;
 - the severity `level` of failing this check (suggestion, warning or error);
-- the `scope` the check operates on (see [Formats](https://github.com/jdkato/vale/wiki/Formats) to learn about scoping); and
+- the `scope` the check operates on (see [Formats](https://valelint.github.io/docs/formats/) to learn about scoping); and
 - check-specific data (see Check Types).
 
 ## Creating a style
 
 `checks` provide a high-level way to extend Vale. They perform operations such as checking for consistency, counting occurrences and suggesting changes.
 
-[Vale](https://github.com/jdkato/vale/tree/master/rule) and its reference styles, [The Economist](https://github.com/jdkato/vale/tree/master/styles/TheEconomist) and [`write-good`](https://github.com/jdkato/vale/tree/master/styles/write-good), provide examples of how you can write your own rules.
+[Vale](https://github.com/ValeLint/vale/tree/master/rule) and its [reference styles](https://github.com/ValeLint/vale/tree/master/styles) provide examples of how you can write your own rules.
 
 ### existence
 
