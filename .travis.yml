@@ -3,9 +3,11 @@ sudo: required
 language: python
 install:
   - pip install -r requirements.txt
+  - gem install awesome_bot
   - go get github.com/ValeLint/vale
 script:
   - vale content
+  - awesome_bot content/*.md
 after_success:
   - mkdocs build --verbose --clean --strict
 deploy:
