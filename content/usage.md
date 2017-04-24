@@ -65,7 +65,7 @@ But Vale's true strength lies in its ability to support *your* style. See [Style
 <!-- vale docs.Branding = NO -->
 
 <p>
-<a href="https://github.com/TimKam/atomic-vale"><img alt="Atom Logo" src="../img/atom.png" width="64" height="64"></a>
+<a href="https://github.com/TimKam/atomic-vale"><img alt="Atom Logo" src="../img/atom.png" width="68" height="68"></a>
 
 <a href="https://github.com/ValeLint/SubVale"><img alt="Sublime Text Logo" src="../img/sublime.png" width="64" height="64"></a>
 </p>
