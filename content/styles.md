@@ -172,3 +172,21 @@ test.md:1:224:vale.UnexpandedAcronyms:'DAFB' has no definition
 ```
 
 A `conditional` check also takes an optional `exceptions` list. Any token listed as an exception will not be flagged.
+
+### spelling
+
+```yaml
+extends: spelling
+message: "Use '%s' instead of '%s'"
+level: error
+scope: text.md
+# "US", "UK" or omit to ignore locality differences
+locale: US
+ignore:
+  - Something
+add:
+  - Valelin # bad
+  - ValeLint # good
+```
+
+`spelling` allows you to create your own syntax-aware spell checker. It's powered by [misspell](https://github.com/client9/misspell). You can ignore specific words by adding them to the `ignore` list. You can also add new pairs of words to check using the `add` list.
