@@ -26,9 +26,13 @@ where *base*, *blog*, and *docs* are your styles. The [YAML](http://yaml.org/) f
 
 ## Creating a style
 
-`checks` offer a high-level way to extend Vale. They perform operations such as checking for consistency, counting occurrences and suggesting changes.
+`checks` offer a high-level way to extend Vale. They perform operations such as checking for consistency, counting occurrences, and suggesting changes.
 
 [Vale](https://github.com/ValeLint/vale/tree/master/rule) and its [reference styles](https://github.com/ValeLint/vale/tree/master/styles) are examples of how you can write your own rules.
+
+!!! tip "NOTE"
+
+    Vale uses Go's [`regexp` package](https://golang.org/pkg/regexp/syntax/) to evaluate all patterns in rule definitions. This means that lookarounds and backreferences are not supported.
 
 ### existence
 
