@@ -4,4 +4,4 @@ link: 'https://contribute.jquery.org/style-guide/prose/#grammar'
 scope: sentence
 level: warning
 tokens:
-  - '(?:[^,]+,){1,}\s\w+\sand'
+  - '(?:[^,]+,){1,}\s[\w ]+\sand'
