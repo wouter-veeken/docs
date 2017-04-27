@@ -23,7 +23,8 @@
 
 .text {
   background: #FFF;
-  padding-left: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
   min-height: 120px;
 }
 
