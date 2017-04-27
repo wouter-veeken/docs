@@ -1,0 +1,35 @@
+.right {
+  right: 20px;
+}
+
+.card {
+  display: inline-block;
+  max-width: 320px;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,.15);
+  margin: 10px;
+  transition: all .2s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  margin-bottom: 54px;
+}
+
+.image:hover,
+.card:hover .image {
+  height: 200px;
+  opacity: 1;
+}
+
+.text {
+  background: #FFF;
+  padding-left: 20px;
+  min-height: 120px;
+}
+
+@media (max-width: 1250px) {
+  .card {
+    width: 100%;
+    max-width: none;
+  }
+}

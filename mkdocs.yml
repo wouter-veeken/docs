@@ -16,10 +16,14 @@ pages:
 - Usage: usage.md
 - Configuration: config.md
 - Custom Styles: styles.md
+- Available Styles: showcase.md
 - File Formats: formats.md
 - In the Wild: examples.md
 
 theme: material
+extra_css:
+  - 'css/style.css'
+
 extra:
   logo: 'img/vale-alt.png'
   palette:

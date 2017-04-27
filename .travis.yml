@@ -9,6 +9,7 @@ script:
   - vale content
   - awesome_bot --allow-dupe content/*.md
 after_success:
+  - python load_styles.py
   - mkdocs build --verbose --clean --strict
 deploy:
   provider: pages

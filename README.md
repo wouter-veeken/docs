@@ -25,3 +25,20 @@ We follow 18F's [content guidelines](https://pages.18f.gov/content-guide/) with 
 
 We also use [`awesome_bot`](https://github.com/dkhamsing/awesome_bot) to check that all our links are working.
 
+### Adding a Style
+
+Have a style to share? Great&mdash;we'd love to include it in our list! Just follow this step-by-step process:
+
+- Open the [`data/styles.yml` file]() on GitHub.
+- Press the Pencil Icon in the upper Right Corner of the Code Preview.
+- Add your style to the correct category, following this structure:
+
+```yml
+- title: {...}
+  summary: {...}
+  url: {source link}
+  download: {.zip download link}
+```
+
+- Save your commit and submit a pull request.
+
