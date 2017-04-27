@@ -24,7 +24,7 @@
       summary: Guidelines for creating plain and concise writing.
       url: https://pages.18f.gov/content-guide/
       download: https://github.com/ValeLint/docs/raw/master/styles/18F.zip
-- editorial:
+- docs:
   title: Documentation
   types:
     - title: Homebrew
