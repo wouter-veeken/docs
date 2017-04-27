@@ -29,16 +29,16 @@ We also use [`awesome_bot`](https://github.com/dkhamsing/awesome_bot) to check t
 
 Have a style to share? Great&mdash;we'd love to include it in our list! Just follow this step-by-step process:
 
-- Open the [`data/styles.yml` file]() on GitHub.
+- Open the [`data/styles.yml` file](https://github.com/ValeLint/docs/blob/master/data/styles.yml) on GitHub.
 - Press the Pencil Icon in the upper Right Corner of the Code Preview.
 - Add your style to the correct category, following this structure:
 
-```yml
-- title: {...}
-  summary: {...}
-  url: {source link}
-  download: {.zip download link}
-```
+    ```yml
+    - title: {...}
+      summary: {...}
+      url: {source link}
+      download: {.zip download link}
+    ```
 
 - Save your commit and submit a pull request.
 
