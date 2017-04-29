@@ -15,6 +15,8 @@ MinAlertLevel = warning # suggestion, warning or error
 BasedOnStyles = vale, MyCustomStyle
 # Style.Rule = {YES, NO} to enable or disable a specific rule
 vale.Editorializing = YES
+# You can also change the level associated with a rule
+vale.Hedging = error
 ...
 
 # Syntax-specific settings
