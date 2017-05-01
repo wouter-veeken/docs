@@ -35,13 +35,17 @@ Vale also supports context-specific configuration in Markdown, HTML, and reStruc
 
 ```html
 <!-- vale off -->
+
 This is some text
 
 more text here...
+
 <!-- vale on -->
 
 <!-- vale Style.Rule = NO -->
+
 This is some text
+
 <!-- vale Style.Rule = YES -->
 ```
 
