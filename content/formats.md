@@ -1,34 +1,19 @@
 ## Overview
 
-Vale strives to be "syntax aware," which means that it's capable of both applying rules to and ignoring certain sections of text. The difficulty with this is supporting the many different writing formats: Markdown, AsciiDoc, reStructuredText, etc.
-
-Fortunately, they all have something in common: they're designed, to varying degrees, for conversion into HTML. Vale uses this commonality to avoid having to do any parsing itself and to allow for straightforward integration of new formats. The strategy is as follows:
-
-1. Use a third-party library to convert the markup to HTML;
-2. use Go's [`html`](https://godoc.org/golang.org/x/net/html) package to tokenize the HTML; and
-3. assign scopes to certain sections of text, which we then choose to either lint or ignore.
-
-While this may sound like a roundabout approach, Vale is still quite performant:
-
-| Project                | Files | Lines | Command                       | macOS  | Windows |
-|:----------------------:|:-----:|:-----:|:-----------------------------:|:------:|:-------:|
-| [You-Dont-Know-JS][p1] |  68   | 21464 |  `time vale --glob='*.md' .`  |  6.9s  |  6.6s   |
-| [NLTK Book][p2]        |  45   | 36125 |  `time vale --glob='*.rst' .` |  18.2s |  15.5s  |
-| [Django][p3]           |  2390 | 55101 |  `time vale --glob='*.py' .`  |  12.2s |  8.1s   |
-
-The testing environments were (using Vale's built-in rules):
-
-- macOS: v10.10.5, 2.9GHz Intel Core i7, 16GB DDR3
-- Windows: v10, 3.10GHz Intel Core i5-3350, 8GB DDR3
-
-## Scoping
-
-Vale uses a scoping system to offer greater control over where certain rules apply. A scope is specified through a *selector* such as `paragraph.rst`, which indicates that the rule applies to all paragraphs in reStrucutredText files. Here are a few examples:
+Vale is "syntax aware," which means that it's capable of both applying rules to and ignoring certain sections of text. This functionality is implemented through a *scoping* system. A scope (i.e., a particular section of text) is specified through a *selector* such as `paragraph.rst`, which indicates that the rule applies to all paragraphs in reStrucutredText files. Here are a few examples:
 
 - `comment` matches all source code comments;
 - `comment.line` matches all source code line comments;
 - `heading.md` matches all Markdown headings; and
 - `text.html` matches all HTML scopes.
+
+The table below summarizes all available scopes.
+
+|   Format   |                             Scopes                            |
+|:----------:|---------------------------------------------------------------|
+|   markup   | heading, table.heading, table.cell, list, paragraph, sentence |
+|    code    | comment.line, comment.block                                   |
+| plain text | text                                                          |
 
 ## Markdown
 
