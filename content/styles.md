@@ -199,7 +199,7 @@ add:
 
 `spelling` allows you to create your own syntax-aware spell checker. It's powered by [misspell](https://github.com/client9/misspell). You can ignore specific words by adding them to the `ignore` list. You can also add new pairs of words to check using the `add` list.
 
-### capitaliztion
+### capitalization
 
 ```yaml
 extends: capitalization
