@@ -15,9 +15,9 @@ pages:
 - Getting Started: index.md
 - Usage: usage.md
 - Configuration: config.md
+- File Formats: formats.md
 - Custom Styles: styles.md
 - Style Showcase: showcase.md
-- File Formats: formats.md
 - In the Wild: examples.md
 
 theme: material

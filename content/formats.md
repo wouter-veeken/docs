@@ -11,7 +11,7 @@ The table below summarizes all available scopes.
 
 |   Format   |                             Scopes                            |
 |:----------:|---------------------------------------------------------------|
-|   markup   | heading, table.heading, table.cell, list, paragraph, sentence |
+|   markup   | heading, table.header, table.cell, list, paragraph, sentence  |
 |    code    | comment.line, comment.block                                   |
 | plain text | text                                                          |
 
