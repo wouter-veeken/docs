@@ -11,7 +11,7 @@ USAGE:
    vale [global options] command [command options] [arguments...]
 
 VERSION:
-   X.X.X
+   vX.X.X
 
 COMMANDS:
      dump-config, dc  Dumps configuration options to stdout and exits
@@ -20,7 +20,8 @@ COMMANDS:
 
 GLOBAL OPTIONS:
    --glob value     a glob pattern (e.g., --glob='*.{md,txt}') (default: "*")
-   --output value   output style ("line" or "JSON") (default: "CLI")
+   --output value   output style ("line", "JSON", or "context") (default: "CLI")
+   --ext value      extension to associate with stdin (default: ".txt")
    --no-wrap        don't wrap CLI output
    --no-exit        don't return a nonzero exit code on lint errors
    --sort           sort files by their name in output
