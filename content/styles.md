@@ -198,3 +198,26 @@ add:
 ```
 
 `spelling` allows you to create your own syntax-aware spell checker. It's powered by [misspell](https://github.com/client9/misspell). You can ignore specific words by adding them to the `ignore` list. You can also add new pairs of words to check using the `add` list.
+
+### capitaliztion
+
+```yaml
+extends: capitalization
+message: "'%s' should be in title case"
+level: warning
+scope: heading
+# $title, $sentence, $lower, $upper, or a pattern.
+match: $title
+```
+
+`capitalization` checks that the text in the specified scope matches the case
+of `match`. There are a few pre-defined variables that can be passed as matches:
+
+<!-- vale 18F.UnexpandedAcronyms = NO -->
+
+- `$title`: "The Quick Brown Fox Jumps Over the Lazy Dog."
+- `$sentence`: "The quick brown fox jumps over the lazy dog."
+- `$lower`: "the quick brown fox jumps over the lazy dog."
+- `$upper`: "THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG."
+
+<!-- vale 18F.UnexpandedAcronyms = YES -->
