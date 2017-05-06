@@ -61,7 +61,7 @@ Vale ships with the following rules:
 
 But Vale's true strength lies in its ability to support *your* style. See [Styles](https://valelint.github.io/docs/styles/) for more information on creating your own style guide.
 
-## Editor Integration
+## Editor integration
 
 <!-- vale docs.Branding = NO -->
 

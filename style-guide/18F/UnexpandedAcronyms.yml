@@ -13,17 +13,16 @@ exceptions:
   - CBS
   - CIA
   - CSI
-  - CLI
   - CSS
   - CST
+  - CLI
   - ESPN
   - EST
   - FAQ
   - FBI
   - FIXME
-  - YAML
-  - GNU
   - GOV
+  - GNU
   - HIV
   - HR
   - HTML
@@ -31,7 +30,6 @@ exceptions:
   - HTTPS
   - JSON
   - LAN
-  - LESS
   - MIT
   - MLA
   - MLB
@@ -46,11 +44,9 @@ exceptions:
   - NCAAF
   - NFL
   - NHL
-  - NLTK
   - NOTE
   - PDF
   - PGA
-  - PHP
   - PPV
   - PST
   - SGML
@@ -60,5 +56,6 @@ exceptions:
   - URL
   - USA
   - USSR
+  - YAML
   - XML
   - XXX

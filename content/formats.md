@@ -35,6 +35,8 @@ Vale supports AsciiDoc through the external program [AsciiDoctor](https://rubyge
 
 ## Source code
 
+<!-- vale 18F.UnexpandedAcronyms = NO -->
+
 |   Syntax   |          Extensions         |                                                        Tokens (scope)                                                       |
 |----------|---------------------------|---------------------------------------------------------------------------------------------------------------------------|
 | C          | .c, .h                      | `//` (text.comment.line.ext), `/*...*/` (text.comment.line.ext), `/*` (text.comment.block.ext)                              |
