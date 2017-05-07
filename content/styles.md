@@ -181,24 +181,6 @@ test.md:1:224:vale.UnexpandedAcronyms:'DAFB' has no definition
 
 A `conditional` check also takes an optional `exceptions` list. Any token listed as an exception won't be flagged.
 
-### spelling
-
-```yaml
-extends: spelling
-message: "Use '%s' instead of '%s'"
-level: error
-scope: text.md
-# "US", "UK" or omit to ignore locality differences
-locale: US
-ignore:
-  - Something
-add:
-  - Valelin # bad
-  - ValeLint # good
-```
-
-`spelling` allows you to create your own syntax-aware spell checker. It's powered by [misspell](https://github.com/client9/misspell). You can ignore specific words by adding them to the `ignore` list. You can also add new pairs of words to check using the `add` list.
-
 ### capitalization
 
 ```yaml
@@ -208,6 +190,7 @@ level: warning
 scope: heading
 # $title, $sentence, $lower, $upper, or a pattern.
 match: $title
+style: AP # AP or Chicago; only applies when match is set to $title.
 ```
 
 `capitalization` checks that the text in the specified scope matches the case
@@ -221,3 +204,6 @@ of `match`. There are a few pre-defined variables that can be passed as matches:
 - `$upper`: "THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG."
 
 <!-- vale 18F.UnexpandedAcronyms = YES -->
+
+Additionally, when using `match: $title`, you can specify a style of either `AP` or
+`Chicago`.
