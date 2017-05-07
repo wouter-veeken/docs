@@ -1,6 +1,11 @@
 dist: trusty
 sudo: required
 language: python
+addons:
+  apt:
+    packages:
+      - aspell
+      - aspell-en
 install:
   - pip install -r requirements.txt
   - gem install awesome_bot
