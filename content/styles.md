@@ -24,7 +24,7 @@ where *base*, *blog*, and *docs* are your styles. The [YAML](http://yaml.org/) f
 - the `scope` the check operates on (see [Formats](https://valelint.github.io/docs/formats/) to learn about scoping); and
 - check-specific data (see Check Types).
 
-## Creating a style
+## Creating a Style
 
 `checks` offer a high-level way to extend Vale. They perform operations such as checking for consistency, counting occurrences, and suggesting changes.
 
@@ -34,7 +34,7 @@ where *base*, *blog*, and *docs* are your styles. The [YAML](http://yaml.org/) f
 
     Vale uses Go's [`regexp` package](https://golang.org/pkg/regexp/syntax/) to evaluate all patterns in rule definitions. This means that lookarounds and backreferences are not supported.
 
-### existence
+### `existence`
 
 ```yaml
 extends: existence
@@ -71,7 +71,7 @@ becomes `(?:foo)\sbar(baz)`.
 An `existence` expects its `message` to include a `%s` format specifier, which will be populated with the matched string. So, using the above example, "Consider removing 'foo'" will be printed if we find an occurrence of "foo."
 
 
-### substitution
+### `substitution`
 
 ```yaml
 extends: substitution
@@ -108,7 +108,7 @@ message: "Consider using '%s' instead of '%s'"
 message: "Consider using '%s'"
 ```
 
-### occurrence
+### `occurrence`
 
 ```yaml
 extends: occurrence
@@ -123,7 +123,7 @@ An `occurrence` check limits the number of times a particular token can appear i
 
 This is the only check that doesn't accept a format specifier in its message.
 
-### repetition
+### `repetition`
 
 ```yaml
 extends: repetition
@@ -137,7 +137,7 @@ tokens:
 
 A `repetition`  check  looks for repeated occurrences of its tokens. If `ignorecase` is set to `true`, it'll convert all tokens to lower case for comparison purposes.
 
-### consistency
+### `consistency`
 
 ```yaml
 extends: consistency
@@ -152,7 +152,7 @@ either:
 
 A `consistency` check will ensure that a key and its value (e.g., "advisor" and "adviser") don't both occur in its scope.
 
-### conditional
+### `conditional`
 
 ```yaml
 extends: conditional
@@ -181,7 +181,7 @@ test.md:1:224:vale.UnexpandedAcronyms:'DAFB' has no definition
 
 A `conditional` check also takes an optional `exceptions` list. Any token listed as an exception won't be flagged.
 
-### capitalization
+### `capitalization`
 
 ```yaml
 extends: capitalization

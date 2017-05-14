@@ -33,7 +33,7 @@ By default, it ignores literal blocks, inline literals, and `code-block`s.
 
 Vale supports AsciiDoc through the external program [AsciiDoctor](https://rubygems.org/gems/asciidoctor). By default, it ignores listing blocks and inline literals.
 
-## Source code
+## Code
 
 <!-- vale 18F.UnexpandedAcronyms = NO -->
 

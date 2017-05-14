@@ -18,7 +18,7 @@ pages:
 - File Formats: formats.md
 - Custom Styles: styles.md
 - Style Showcase: showcase.md
-- In the Wild: examples.md
+- Usage Examples: examples.md
 
 theme: material
 extra_css:
