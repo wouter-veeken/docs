@@ -25,7 +25,7 @@ vale.Hedging = error
 ...
 ```
 
-## Configuration Using Comments
+## Using Comments
 
 !!! tip "NOTE"
 
