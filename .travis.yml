@@ -1,18 +1,15 @@
 dist: trusty
 sudo: required
 language: python
-addons:
-  apt:
-    packages:
-      - aspell
-      - aspell-en
 install:
   - pip install -r requirements.txt
   - gem install awesome_bot
+  - npm i markdown-spellcheck -g
   - go get github.com/ValeLint/vale
 script:
   - vale content
   - awesome_bot --allow-dupe content/*.md
+  - mdspell -r --en-us "**/*.md"
 after_success:
   - python load_styles.py
   - mkdocs build --verbose --clean --strict
