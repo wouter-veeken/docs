@@ -1,8 +1,8 @@
 ## Basics
 
-Vale looks for its configuration in a file named `.vale` or `_vale`. This file may be located in the current working directory, a parent directory or `$HOME`. If more than one config file is present, the closest one takes precedence.
+Vale looks for its configuration in a file named `.vale` or `_vale`. This file may be located in the current working directory, a parent directory or `$HOME`. If more than one configuration file is present, the closest one takes precedence.
 
-The basic structure of a config file is as follows:
+The basic structure of a configuration file is as follows:
 
 ```ini
 # Core settings
@@ -51,7 +51,7 @@ This is some text
 
 ## Examples
 
-Let's say we're working on a project with Python source code and reStructuredText documentation. Assuming we're using styles named `base` (with general style rules) and `ProjectName` (with project-specific rules), we could have a config file like this:
+Let's say we're working on a project with Python source code and reStructuredText documentation. Assuming we're using styles named `base` (with general style rules) and `ProjectName` (with project-specific rules), we could have the following configuration:
 
 ```ini
 StylesPath = styles

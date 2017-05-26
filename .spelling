@@ -1,0 +1,19 @@
+# Words to ignore
+AsciiDoc
+AsciiDoctor
+docutils
+e.g.
+Github
+Github-Flavored
+Haskell
+Homebrew
+i.e.
+Linters
+Lua
+macOS
+MkDocs
+pre-defined
+reStructuredText
+Sass
+Signavio
+Tox

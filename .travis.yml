@@ -9,7 +9,7 @@ install:
 script:
   - vale content
   - awesome_bot --allow-dupe content/*.md
-  - mdspell -r --en-us "**/*.md"
+  - mdspell -r -n -a --en-us "**/*.md"
 after_success:
   - python load_styles.py
   - mkdocs build --verbose --clean --strict

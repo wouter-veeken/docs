@@ -19,7 +19,7 @@ We follow 18F's [content guidelines](https://pages.18f.gov/content-guide/) with 
 
 <!-- vale off -->
 
-- Use standard American English spelling (e.g., "color" instead of "colour").
+- Use standard American English spelling.
 - Capitalize "Vale" unless specifically referring to the binary (in which case it should be in a code span&mdash;i.e., `vale`).
 - Use correct tech terminology: JavaScript, HTML, etc.
 - Use title case for headings.
