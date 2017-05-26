@@ -24,7 +24,7 @@ We follow 18F's [content guidelines](https://pages.18f.gov/content-guide/) with 
 - Use correct tech terminology: JavaScript, HTML, etc.
 - Use title case for headings.
 
-We also use [`awesome_bot`](https://github.com/dkhamsing/awesome_bot) to check that all our links are working.
+We also use [`awesome_bot`](https://github.com/dkhamsing/awesome_bot) to check our links and [`markdown-spellcheck`](https://github.com/lukeapage/node-markdown-spellcheck) to check our spelling.
 
 ### Adding a Style
 
