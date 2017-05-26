@@ -25,7 +25,7 @@ vale.Hedging = error
 ...
 ```
 
-## Context-specific configuration
+## Configuration Using Comments
 
 !!! tip "NOTE"
 
