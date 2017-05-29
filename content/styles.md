@@ -18,11 +18,13 @@ styles/
 
 where *base*, *blog*, and *docs* are your styles. The [YAML](http://yaml.org/) files are rule definitions that include the following keys:
 
-- The `type` of check you're extending;
-- a `message` to be displayed to the user;
-- the severity `level` of failing this check (suggestion, warning or error);
-- the `scope` the check operates on (see [Formats](https://valelint.github.io/docs/formats/) to learn about scoping); and
-- check-specific data (see Check Types).
+- `extends`: The type of check you're extending (see [Creating a Style](https://valelint.github.io/docs/styles/#creating-a-style)).
+- `message`: A message to be displayed to the user.
+- `level`: A severity level (suggestion, warning, or error).
+- `scope`: The type of text the rule operates on (see [Formats](https://valelint.github.io/docs/formats/) to learn about scoping).
+- `code`: `true` to include the content of code spans and `false` (the default) to ignore them.
+
+Many checks also include their own specific settings, which are discussed in more detail below.
 
 ## Creating a Style
 
