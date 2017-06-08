@@ -73,6 +73,8 @@ But Vale's true strength lies in its ability to support *your* style. See [Style
 <a href="https://github.com/w0rp/ale"><img alt="Vim Logo" src="../img/vim.png" title="Vim (ALE)" width="64" height="64"></a>
 
 <a href="https://github.com/abingham/flycheck-vale"><img alt="Emacs Logo" src="../img/emacs.png" title="Emacs" width="64" height="64"></a>
+
+<a href="https://marketplace.visualstudio.com/items?itemName=lunaryorn.vale"><img alt="VS Code Logo" src="../img/vscode.png" title="Visual Studio Code" width="64" height="64"></a>
 </p>
 
 <!-- vale docs.Branding = YES -->
