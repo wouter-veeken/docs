@@ -6,7 +6,7 @@
       url: https://github.com/rowanmanning/joblint
       download: https://github.com/ValeLint/docs/raw/master/styles/Joblint.zip
     - title: write-good
-      summary: Naive linter for English prose for developers who can't write good and wanna learn to do other stuff good too.
+      summary: Naive linter for English prose for developers who can't write good.
       url: https://github.com/btford/write-good
       download: https://github.com/ValeLint/docs/raw/master/styles/write-good.zip
 - editorial:
@@ -24,6 +24,10 @@
       summary: Guidelines for creating plain and concise writing.
       url: https://pages.18f.gov/content-guide/
       download: https://github.com/ValeLint/docs/raw/master/styles/18F.zip
+    - title: MailChimp
+      summary: Writing style guidelines used at MailChimp.
+      url: http://styleguide.mailchimp.com/
+      download: https://github.com/ValeLint/docs/raw/master/styles/MailChimp.zip
 - docs:
   title: Documentation
   types:
@@ -35,3 +39,7 @@
       summary: A set of rules based on jQuery's formatting conventions and writing style.
       url: https://contribute.jquery.org/style-guide/prose/
       download: https://github.com/ValeLint/docs/raw/master/styles/jQuery.zip
+    - title: OpenStack
+      summary: Writing style guidelines used on the OpenStack documentation.
+      url: https://docs.openstack.org/contributor-guide/writing-style.html
+      download: https://github.com/ValeLint/docs/raw/master/styles/OpenStack.zip

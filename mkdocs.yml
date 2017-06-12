@@ -24,6 +24,9 @@ theme: material
 extra_css:
   - 'css/style.css'
 
+# extra_javascript:
+#  - 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'
+
 extra:
   logo: 'img/vale-alt.png'
   palette:
