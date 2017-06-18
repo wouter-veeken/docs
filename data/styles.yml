@@ -25,7 +25,7 @@
       url: https://pages.18f.gov/content-guide/
       download: https://github.com/ValeLint/docs/raw/master/styles/18F.zip
     - title: MailChimp
-      summary: Writing style guidelines used at MailChimp.
+      summary: Writing style guidelines created for MailChimp employees.
       url: http://styleguide.mailchimp.com/
       download: https://github.com/ValeLint/docs/raw/master/styles/MailChimp.zip
 - docs:
