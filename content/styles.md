@@ -92,7 +92,7 @@ swap:
   abundance: plenty
 ```
 
-The keys  may be regular expressions, but they can't include nested capture groups:
+The keys may be regular expressions, but they can't include nested capture groups:
 
 ```yaml
 swap:

@@ -9,6 +9,10 @@
       summary: Naive linter for English prose for developers who can't write good.
       url: https://github.com/btford/write-good
       download: https://github.com/ValeLint/docs/raw/master/styles/write-good.zip
+    - title: proselint
+      summary: A linter for English prose that aggregates knowledge about best practices in writing.
+      url: https://github.com/amperser/proselint
+      download: https://github.com/ValeLint/docs/raw/master/styles/proselint.zip
 - editorial:
   title: Editorial Style Guides
   types:
