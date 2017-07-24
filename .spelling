@@ -1,10 +1,13 @@
 # Words to ignore
 AsciiDoc
 AsciiDoctor
+Coleman-Liau
 docutils
 e.g.
+Flesch-Kincaid
 Github
 Github-Flavored
+Gunning Fog
 Haskell
 Homebrew
 i.e.
@@ -16,8 +19,5 @@ pre-defined
 reStructuredText
 Sass
 Signavio
-Tox
-Gunning Fog
-Coleman-Liau
-Flesch-Kincaid
 SMOG
+Tox
