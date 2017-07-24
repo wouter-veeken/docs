@@ -205,7 +205,30 @@ of `match`. There are a few pre-defined variables that can be passed as matches:
 - `$lower`: "the quick brown fox jumps over the lazy dog."
 - `$upper`: "THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG."
 
-<!-- vale 18F.UnexpandedAcronyms = YES -->
-
 Additionally, when using `match: $title`, you can specify a style of either `AP` or
 `Chicago`.
+
+### `readability`
+
+```yaml
+extends: readability
+message: "Grade level (%s) too high!"
+level: warning
+grade: 8
+metrics:
+  - Flesch-Kincaid
+  - Gunning Fog"
+```
+
+`readability` calculates a readability score according the specified metrics.
+The supported tests are Gunning Fog, Coleman-Liau, Flesch-Kincaid, SMOG, and
+Automated Readability.
+
+If more than one is listed (as seen above), the scores will be averaged. This is
+also the only extension point that doesn't accept a `scope`, as readability is
+always calculated using the entire document.
+
+`grade` is the highest acceptable score. Using the example above, a warning will
+be issued if `grade` exceeds 8.
+
+<!-- vale 18F.UnexpandedAcronyms = YES -->
