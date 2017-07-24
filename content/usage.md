@@ -49,13 +49,11 @@ Vale ships with the following rules:
 | Rule           | Description                                                                        | Severity |
 |:--------------:|:----------------------------------------------------------------------------------:|:--------:|
 | `Editorializing` |  The use of adverbs or phrases to highlight something as particularly significant. | warning  |
-| `ComplexWords`   |  The use of a complex word where a simpler one would do.                           | warning  |
 | `GenderBias`     |  The unnecessary use of gender-specific language.                                  |   error  |
 | `Hedging`        |  The use of phrases, like "in my opinion," that weaken meaning.                    | warning  |
 | `Redundancy`     |  The use of phrases like "ATM machine."                                            |   error  |
 | `Repetition`     |  Instances of repeated words, which are often referred to as lexical illusions.    |   error  |
 | `Uncomparables`  |  The use of phrases like "very unique."                                            |   error  |
-| `Wordiness`      |  The us of phrases like "in order to" and "due to the fact that."                  | warning  |
 
 <!-- vale on -->
 
