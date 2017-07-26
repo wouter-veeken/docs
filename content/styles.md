@@ -217,7 +217,7 @@ level: warning
 grade: 8
 metrics:
   - Flesch-Kincaid
-  - Gunning Fog"
+  - Gunning Fog
 ```
 
 `readability` calculates a readability score according the specified metrics.
