@@ -26,6 +26,14 @@ $ brew tap ValeLint/vale
 $ brew install vale
 ```
 
+**Linux**
+
+The easiest way to install on Linux is to use the snap package. Make sure you have [snap support installed](https://snapcraft.io/docs/core/install), then:
+
+```bash
+$ snap install vale
+```
+
 **Manually (Windows, macOS & Linux)**
 
 Download a binary from the [releases page](https://github.com/ValeLint/vale/releases) for your OS.
