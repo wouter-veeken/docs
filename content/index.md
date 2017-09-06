@@ -16,7 +16,6 @@ Vale works on Windows, macOS, and Linux. Installation is straightforward and the
 
 The easiest way to install on Windows is to use the Windows Installer package, `vale.msi` (which you'll find on the [releases page](https://github.com/ValeLint/vale/releases)).
 
-
 **Homebrew (macOS)**
 
 The easiest way to install on macOS is through [Homebrew](https://brew.sh/):
@@ -24,14 +23,6 @@ The easiest way to install on macOS is through [Homebrew](https://brew.sh/):
 ```bash
 $ brew tap ValeLint/vale
 $ brew install vale
-```
-
-**Linux**
-
-The easiest way to install on Linux is to use the snap package. Make sure you have [snap support installed](https://snapcraft.io/docs/core/install), then:
-
-```bash
-$ snap install vale
 ```
 
 **Manually (Windows, macOS & Linux)**
