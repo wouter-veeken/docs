@@ -2,7 +2,6 @@ site_name: 'Your Style, Our Editor'
 site_description: A customizable, syntax-aware linter for prose.
 site_author: Joseph Kato
 site_url: https://valelint.github.io/docs/
-site_favicon: 'img/vale.png'
 
 # Repository
 repo_name: ValeLint/vale
@@ -21,7 +20,10 @@ pages:
 - Style Showcase: showcase.md
 - Examples: examples.md
 
-theme: material
+theme:
+  name: material
+  favicon: 'img/vale.png'
+
 extra_css:
   - 'css/style.css'
 
@@ -46,8 +48,6 @@ markdown_extensions:
   - pymdownx.betterem(smart_enable=all)
   - pymdownx.caret
   - pymdownx.critic
-  - pymdownx.emoji:
-      emoji_generator: !!python/name:pymdownx.emoji.to_svg
   - pymdownx.inlinehilite
   - pymdownx.magiclink
   - pymdownx.mark
