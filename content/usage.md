@@ -78,5 +78,5 @@ But Vale's true strength lies in its ability to support *your* style. See [Style
 <!-- vale docs.Branding = YES -->
 
 [Editorializing]: https://en.wikipedia.org/wiki/Wikipedia:Manual_of_Style/Words_to_watch#Editorializing
-[ComplexWords]: http://www.plainlanguage.gov/howto/wordsuggestions/complexabstract.cfm
+[ComplexWords]: https://plainlanguage.gov/resources/articles/complex-abstract-words/
 
