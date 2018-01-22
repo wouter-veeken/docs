@@ -2,6 +2,7 @@ site_name: 'Your Style, Our Editor'
 site_description: A customizable, syntax-aware linter for prose.
 site_author: Joseph Kato
 site_url: https://valelint.github.io/docs/
+site_favicon: 'img/vale.png'
 
 # Repository
 repo_name: ValeLint/vale
