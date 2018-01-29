@@ -1,10 +1,11 @@
 # Words to ignore
 AsciiDoc
 AsciiDoctor
-Coleman-Liau
+Liau
 docutils
 e.g.
-Flesch-Kincaid
+Flesch
+Kincaid
 GitHub
 GitHub-Flavored
 Gunning Fog
@@ -15,7 +16,7 @@ Linters
 Lua
 macOS
 MkDocs
-pre-defined
+pre
 reStructuredText
 Sass
 Signavio
