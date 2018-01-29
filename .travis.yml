@@ -4,12 +4,10 @@ language: python
 install:
   - pip install -r requirements.txt
   - gem install awesome_bot
-  - npm i markdown-spellcheck -g
   - go get github.com/ValeLint/vale
 script:
   - vale content
   - awesome_bot --allow-dupe content/*.md
-  - mdspell -r -n -a --en-us "**/*.md"
 after_success:
   - python load_styles.py
   - mkdocs build --verbose --clean --strict

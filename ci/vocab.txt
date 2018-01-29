@@ -5,8 +5,8 @@ Coleman-Liau
 docutils
 e.g.
 Flesch-Kincaid
-Github
-Github-Flavored
+GitHub
+GitHub-Flavored
 Gunning Fog
 Haskell
 Homebrew

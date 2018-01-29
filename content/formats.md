@@ -17,7 +17,7 @@ The table below summarizes all available scopes.
 
 ## Markdown
 
-Vale has built-in support for Github-Flavored Markdown. By default, it ignores indented blocks, fenced blocks, and code spans.
+Vale has built-in support for GitHub-Flavored Markdown. By default, it ignores indented blocks, fenced blocks, and code spans.
 
 ## HTML
 
