@@ -1,6 +1,6 @@
 ## Basics
 
-Vale looks for its configuration in a file named `.vale` or `_vale`. This file may be located in the current working directory, a parent directory or `$HOME`. If more than one configuration file is present, the closest one takes precedence.
+Vale looks for its configuration in a file named `.vale.ini` or `_vale.ini`. This file may be located in the current working directory, a parent directory or `$HOME`. If more than one configuration file is present, the closest one takes precedence.
 
 The basic structure of a configuration file is as follows:
 

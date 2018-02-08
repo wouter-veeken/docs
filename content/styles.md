@@ -232,3 +232,17 @@ always calculated using the entire document.
 be issued if `grade` exceeds 8.
 
 <!-- vale 18F.UnexpandedAcronyms = YES -->
+
+### `spelling`
+
+```yaml
+extends: spelling
+message: "Did you really mean '%s'?"
+level: error
+ignore: ci/vocab.txt
+```
+
+`spelling` implements spell checking based on Hunspell-compatible dictionaries. By default, Vale includes `en_US-web`&mdash;an up-to-date, actively maintained dictionary. However, you may also specify your own via the `dic` and `aff` keys (the fully-qualified paths are required; e.g., `/usr/share/hunspell/en_US.dic`).
+
+`spelling` also accepts an `ignore` file, which consists of one word per line to
+be ignored during spell checking.
