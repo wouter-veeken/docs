@@ -7,3 +7,4 @@
 ## In the News
 
 - [Natural language linting (Signavio)](https://tech.signavio.com/2017/natural-language-linting)
+- [Linters for the English Language (DZone)](https://dzone.com/articles/lint-lint-and-away-linters-for-the-english-languag)
