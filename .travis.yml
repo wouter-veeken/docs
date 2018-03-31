@@ -6,6 +6,7 @@ install:
   - gem install awesome_bot
   - go get github.com/ValeLint/vale
 script:
+  - vale -v
   - vale content
   - awesome_bot --allow-dupe content/*.md
 after_success:
