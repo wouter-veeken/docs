@@ -246,3 +246,23 @@ ignore: ci/vocab.txt
 
 `spelling` also accepts an `ignore` file, which consists of one word per line to
 be ignored during spell checking.
+
+Additionally, you may further customize the spell-checking experience by defining *filters*:
+
+```yaml
+extends: spelling
+message: "Did you really mean '%s'?"
+level: error
+# This disables the built-in filters. If you omit this key or set it to false,
+# custom filters (see below) are added on top of the built-in ones.
+#
+# By default, Vale includes filters for acronyms, abbreviations, and numbers.
+custom: true
+# A "filter" is a regular expression specifying words to ignore during spell
+# checking.
+filters:
+  - '[pP]y.*\b'  # Ignore all words starting with 'py' -- e.g., 'PyYAML'.
+ignore: ci/vocab.txt
+```
+
+
