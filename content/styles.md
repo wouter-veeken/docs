@@ -41,16 +41,21 @@ Many checks also include their own specific settings, which are discussed in mor
 ```yaml
 extends: existence
 message: "Consider removing '%s'"
-ignorecase: true
+ignorecase: true  # Ignores upper/lower case.
+# nonword: true  # Uncomment this to ignore word boundaries (when using 'tokens').
 level: warning
 tokens:
   - appear to be
   - arguably
 ```
 
-The most common extension point is the `existence` check. As its name implies, it looks for the *existence* of particular strings.
+`existence` is the most common extension point. It looks for the existence of particular strings and outputs a customizable message.
 
-You may define these strings as elements of lists named either `tokens` or `raw`. The former converts its elements into a word-bounded group by default. For instance,
+You must define your strings as a list. The list can be one of two types:
+  - `tokens`: Vale converts your list items to a word-bounded group, i.e.: `\b(?:item1|item2)\b`. This is useful for most scenarios.
+  - `raw`: Vale concatenates your list items into one string, i.e.: `item1item2`. This is useful if you want to check for the existence of long strings that are hard to read when defined on a single line.
+
+Example using `tokens`:
 
 ```yaml
 message: "Consider removing '%s'"
@@ -59,19 +64,19 @@ tokens:
   - bar
   - baz
 ```
-becomes `\b(?:foo|bar|baz)\b`. You can also use the keys `ignorecase` and `nonword` to add `(?!)` and drop the word boundaries, respectively.
 
-`raw`, on the other hand, simply concatenates its elements&mdash;so, something like
+The above tells Vale to check for the existence of `\b(?:foo|bar|baz)\b`. `%s` in the message is replaced with the matched string. For example, the existence of "foo" will result in the message "Consider removing 'foo'".
+
+Example using `raw`:
 
 ```yaml
 raw:
   - '(?:foo)\sbar'
   - '(baz)'
 ```
-becomes `(?:foo)\sbar(baz)`.
+This tells Vale to check for `(?:foo)\sbar(baz)`. If the text contains "foo barbaz", for example, Vale will return the message "Consider removing ' barbaz'".
 
-An `existence` expects its `message` to include a `%s` format specifier, which will be populated with the matched string. So, using the above example, "Consider removing 'foo'" will be printed if we find an occurrence of "foo."
-
+You can also use the optional boolean parameters `ignorecase` (to add `(?!)` to the regex pattern) and `nonword` (to remove `\b`).
 
 ### `substitution`
 
